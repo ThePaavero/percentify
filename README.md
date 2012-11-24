@@ -1,7 +1,7 @@
 Percentify
 ==========
 
-##Helps you turn a pixel based CSS into percentage based CSS##
+##Helps you turn pixel based CSS into percentage based CSS##
 
 ##Usage Examples:##
 ###Default###
