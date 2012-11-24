@@ -24,3 +24,8 @@ var P = new Percentifier(false, 'div, a, form, article, aside');
 &lt;/script&gt;
 
 The defaults are 'div, aside, article, img, h1, h2, h3, h4, p, span, form, a'
+
+##Demo##
+http://munfillari.com/temp/percentify/
+
+(check the console)
