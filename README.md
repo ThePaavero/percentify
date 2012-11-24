@@ -13,7 +13,7 @@ var P = new Percentifier(false);
 ###Can also be used to actually rewrite element styles###
 &lt;script type='text/javascript'&gt;
 var P = new Percentifier(true);
-&lt;/script&gt;
+&lt;/script&gt;tag_br space space
 Just in emergency cases -- don't rely on JS to make your site responsive.
 
 ###Custom Selectors (jQuery style)###
