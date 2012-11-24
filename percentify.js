@@ -1,11 +1,14 @@
 /**
  * Percentify! Converts pixels to percentages for a more responsive layout.
- * Either shows the percentages or actually modifies the CSS properties
+ * Either shows[1] the percentages or actually modifies the CSS properties
+ *
+ * [1] Also creates CSS syntax for you to copy.
+ *     It's shown in the browser's console.
  *
  * @package Percentify
  * @uses jQuery
  *
- * @param {boolean} modify Actually modify rules or just help you
+ * @param {boolean} modify          Actually modify rules or just help you
  * @param {string} custom_selectors jQuery style selector string, i.e. 'div, a'
  */
 var Percentifier = function(modify, custom_selectors) {
