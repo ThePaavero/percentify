@@ -17,7 +17,19 @@ var Percentifier = function(modify, custom_selectors) {
 	'use strict';
 
 	var self              = this;
-	var default_selectors = 'div, aside, article, img, h1, h2, h3, h4, p, span, form, a';
+	var default_selectors = 'div, ';
+        default_selectors += 'aside,';
+        default_selectors += 'article,';
+        default_selectors += 'img,';
+        default_selectors += 'h1,';
+        default_selectors += 'h2,';
+        default_selectors += 'h3,';
+        default_selectors += 'h4,';
+        default_selectors += 'h5,';
+        default_selectors += 'p,';
+        default_selectors += 'span,';
+        default_selectors += 'form,';
+        default_selectors += 'a';
 	var selectors         = custom_selectors || default_selectors;
 	var css_syntax        = '';
 	var createdSelectors  = {};
@@ -75,8 +87,8 @@ var Percentifier = function(modify, custom_selectors) {
 	 */
 	var doElement = function(el)
 	{
-		var my_width          = $(el).width();
-		var my_height         = $(el).height();
+		var my_width          = $(el).outerWidth();
+		var my_height         = $(el).outerHeight();
 		var my_parent         = $(el).parent();
 		var my_padding_top    = parseInt($(el).css('padding-top'), 10);
 		var my_padding_bottom = parseInt($(el).css('padding-bottom'), 10);

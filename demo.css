@@ -30,3 +30,6 @@ aside {
 	aside ul {
 		margin-left: 20px;
 	}
+	aside img {
+		width: 320px;
+	}
