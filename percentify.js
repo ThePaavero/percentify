@@ -16,23 +16,25 @@ var Percentifier = function(modify, custom_selectors) {
 	/*global $, console*/
 	'use strict';
 
-	var self              = this;
-	var default_selectors = 'div, ';
-		default_selectors += 'aside,';
-		default_selectors += 'article,';
-		default_selectors += 'img,';
-		default_selectors += 'h1,';
-		default_selectors += 'h2,';
-		default_selectors += 'h3,';
-		default_selectors += 'h4,';
-		default_selectors += 'h5,';
-		default_selectors += 'p,';
-		default_selectors += 'span,';
-		default_selectors += 'form,';
-		default_selectors += 'a';
-	var selectors         = custom_selectors || default_selectors;
-	var css_syntax        = '';
-	var createdSelectors  = {};
+	var default_selectors = [
+		'div',
+		'aside',
+		'article',
+		'img',
+		'h1',
+		'h2',
+		'h3',
+		'h4',
+		'h5',
+		'p',
+		'span',
+		'form',
+		'a',
+		'footer'
+	].join(', ');
+	var selectors        = custom_selectors || default_selectors;
+	var css_syntax       = '';
+	var createdSelectors = {};
 
 	// Modify the CSS properties of the elements? If not, just show them
 	modify = modify || false;
@@ -98,6 +100,8 @@ var Percentifier = function(modify, custom_selectors) {
 		var parent_width  = $(my_parent).width();
 		var parent_height = $(my_parent).height();
 
+		console.log(my_padding_top + ' vs. ' + parent_height);
+
 		var percentages = {
 			width          : (my_width / parent_width) * 100,
 			height         : (my_height / parent_height) * 100,
@@ -157,6 +161,7 @@ var Percentifier = function(modify, custom_selectors) {
 	 */
 	var modifyCSS = function(el, percentages)
 	{
+		console.log(percentages);
 		$(el).css({
 			'width' : percentages.width + '%'
 		});
