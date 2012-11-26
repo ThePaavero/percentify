@@ -3,9 +3,9 @@ Percentify
 
 ##Helps you turn pixel based CSS into percentage based CSS##
 
-Turns `padding-top: 20px;` to `padding-top: 1%;`
+Turns `padding-top: 20px;` into `padding-top: 1%;`
 
-Turns `width: 640px;` to `width: 66%;`
+Turns `width: 640px;` into `width: 66%;`
 
 ---
 
@@ -22,7 +22,7 @@ var P = new Percentifier(false);
 var P = new Percentifier(true);
 ```
 
-Just in emergency cases -- don't rely on JS to make your site responsive.
+Just in emergency cases -- don't rely on JS to make your site responsive, plus the calculations are only meant to help you with doing the boring calculating from pixels to percentages.
 
 ###Custom Selectors (jQuery style)###
 ```javascript
