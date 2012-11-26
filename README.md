@@ -17,19 +17,19 @@ var P = new Percentifier(false);
 
 ...then look at your console.
 
-###Can also be used to actually rewrite element styles###
-```javascript
-var P = new Percentifier(true);
-```
-
-Just in emergency cases -- don't rely on JS to make your site responsive, plus the calculations are only meant to help you with doing the boring calculating from pixels to percentages.
-
 ###Custom Selectors (jQuery style)###
 ```javascript
 var P = new Percentifier(false, 'div, a, form, article, aside');
 ```
 
 The defaults are 'div, aside, article, img, h1, h2, h3, h4, p, span, form, a'
+
+###Can also be used to actually rewrite element styles###
+```javascript
+var P = new Percentifier(true);
+```
+
+*Only for demonstrational/testing purposes* -- This script is meant to help you with doing the boring calculating from pixels to percentages.
 
 ---
 
