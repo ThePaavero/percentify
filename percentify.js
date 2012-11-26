@@ -102,8 +102,6 @@ var Percentifier = function(modify, custom_selectors) {
 		var parent_width  = $(my_parent).width();
 		var parent_height = $(my_parent).height();
 
-		console.log(my_padding_top + ' vs. ' + parent_height);
-
 		var percentages = {
 			width          : (my_width / parent_width) * 100,
 			height         : (my_height / parent_height) * 100,
@@ -163,7 +161,6 @@ var Percentifier = function(modify, custom_selectors) {
 	 */
 	var modifyCSS = function(el, percentages)
 	{
-		console.log(percentages);
 		$(el).css({
 			'width' : percentages.width + '%'
 		});
