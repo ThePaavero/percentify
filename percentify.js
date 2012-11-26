@@ -107,8 +107,8 @@ var Percentifier = function(modify, custom_selectors) {
 		var percentages = {
 			width          : (my_width / parent_width) * 100,
 			height         : (my_height / parent_height) * 100,
-			padding_top    : (my_padding_top / parent_height) * 100,
-			padding_bottom : (my_padding_bottom / parent_height) * 100,
+			padding_top    : (my_padding_top / parent_width) * 100, // O_o
+			padding_bottom : (my_padding_bottom / parent_width) * 100, // o_O
 			padding_left   : (my_padding_left / parent_width) * 100,
 			padding_right  : (my_padding_right / parent_width) * 100
 		};
