@@ -1,5 +1,7 @@
 /**
- * Percentify! Converts pixels to percentages for a more responsive layout.
+ * Percentify!
+ *
+ * Converts pixels to percentages for a more responsive layout.
  * Either shows[1] the percentages or actually modifies the CSS properties
  *
  * [1] Also creates CSS syntax for you to copy.
