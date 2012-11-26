@@ -8,8 +8,8 @@
  * @package Percentify
  * @uses jQuery
  *
- * @param {boolean} modify          Actually modify rules or just help you
- * @param {string} custom_selectors jQuery style selector string, i.e. 'div, a'
+ * @param {boolean} modify           Actually modify rules or just help you
+ * @param {string}  custom_selectors jQuery style selector string, i.e. 'div, a'
  */
 var Percentifier = function(modify, custom_selectors) {
 
